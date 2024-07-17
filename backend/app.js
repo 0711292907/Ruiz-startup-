@@ -61,7 +61,6 @@ app.post('/signup', async (req,res) => {
     }
 })
 
-
 // login 
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
@@ -110,5 +109,6 @@ app.post('/login', async (req, res) => {
       });
     }
   });
+
   
   app.listen(port, console.log(`app is listening on ${port}`)) 
