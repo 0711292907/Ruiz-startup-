@@ -4,7 +4,7 @@ const port = 5000
 const cors = require('cors')
 const bodyParser = require('body-parser')
 require('dotenv').config()
-const pool = require('./connect')
+const pool = require('./connection')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const cookieParser = require('cookie-parser')
