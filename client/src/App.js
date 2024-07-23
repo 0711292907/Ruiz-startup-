@@ -2,7 +2,10 @@
 function App() {
   return (
     <div className="App">
-     helloe
+      <BroswerRouter>
+      helloe
+      </BroswerRouter>
+     
     </div>
   );
 }
