@@ -3,7 +3,9 @@ function App() {
   return (
     <div className="App">
       <BroswerRouter>
-      helloe
+      <Routes>
+        <Routes path="/" elemet>
+      </Routes>
       </BroswerRouter>
      
     </div>
