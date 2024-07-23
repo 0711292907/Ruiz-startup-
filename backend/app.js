@@ -83,7 +83,7 @@ app.post('/login', async (req, res) => {
       if (!isPasswordMatch) {
         return res.status(401).json({
           status: false,
-          message: 'Incorrect email or password.',
+          message: ' password.',
         });
       }
   
