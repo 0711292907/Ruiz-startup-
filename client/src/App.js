@@ -15,10 +15,8 @@ function App() {
         <Routes path="/Login" elemet={<Login/>}/>
         <Routes path="/Nopage" elemet={<NoPage/>}/>
         <Routes path="/Homepage" elemet={<Homepage/>}/>
-
       </Routes>
       </BroswerRouter>
-     
     </div>
   );
 }
