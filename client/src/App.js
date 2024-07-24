@@ -5,19 +5,4 @@ import Register from './components/Register';
 import Nopage from './components/Nopage';
 
 
-function App() {
-  return (
-    <div className="App">
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" elemet={<Register/>}/>
-        <Route path="/Login" elemet={<Login/>}/>
-        <Route path="/Nopage" elemet={<Nopage/>}/>
-        <Route path="/Homepage" elemet={<Homepage/>}/>
-      </Routes>
-      </BrowserRouter>
-    </div>
-  );
-}
 
-export default App;
