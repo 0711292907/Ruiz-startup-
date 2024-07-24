@@ -9,14 +9,14 @@ import NoPage from './components/NoPage';
 function App() {
   return (
     <div className="App">
-      <BroswerRouter>
+      <BrowserRouter>
       <Routes>
         <Routes path="/" elemet={<Register/>}/>
         <Routes path="/Login" elemet={<Login/>}/>
         <Routes path="/NoPage" elemet={<NoPage/>}/>
         <Routes path="/Homepage" elemet={<Homepage/>}/>
       </Routes>
-      </BroswerRouter>
+      </BrowserRouter>
     </div>
   );
 }
