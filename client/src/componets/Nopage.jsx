@@ -1,12 +1,12 @@
 import React from 'react'
 
 
-const Homepage = () => {
+const Nopage = () => {
 
     return (
 
-        <div>Homepage</div>
+        <div>Nopage</div>
     )
 }
 
-export default Homepage
+export default Nopage
