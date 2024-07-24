@@ -1,4 +1,10 @@
 
+import Homepage from './components/Homepage'
+import Login from './components/Login'
+import Register from './components/Register'
+import NoPage from './components/NoPage'
+
+
 function App() {
   return (
     <div className="App">
