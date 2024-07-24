@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Register />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Nopage" element={<Noage />} />
+          <Route path="/Nopage" element={<Nopage />} />
           <Route path="/Homepage" element={<Homepage />} />
         </Routes>
       </BrowserRouter>
