@@ -21,11 +21,7 @@ const Login = () => {
     setValues(prev => ({...prev, [event.target.name]: event.target.value}))
   }
 
-  /**
-   * CLIENT_ID -> 907734368283-66drivkdc5ccdk600ot7qrs616erafls.apps.googleusercontent.com
-   * 
-   * CLIENT_SECRET -> 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
-   */
+
 
   axios.defaults.withCredentials = true
   const handleSubmit = async (event) => {
