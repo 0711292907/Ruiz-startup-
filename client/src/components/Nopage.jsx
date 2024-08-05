@@ -1,12 +1,9 @@
-import React from 'react'
-
-
-const Nopage = () => {
-
-    return (
-
-        <div>Nopage</div>
+const NoPage = () => {
+    return(
+        <div>
+            404 rubbish
+        </div>
     )
 }
 
-export default Nopage
+export default NoPage
