@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const port = 5000;
 const cors = require('cors');
-const bodyParser = require('body-parser'); // Keep for consistency (optional)
+const bodyParser = require('body-parser'); // Keep for consistency
 require('dotenv').config();
-const pool = require('./connection'); // Replace with your database connection logic
+const pool = require('./connection'); // 
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const cookieParser = require('cookie-parser');
