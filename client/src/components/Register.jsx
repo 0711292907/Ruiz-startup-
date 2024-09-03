@@ -26,7 +26,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault()
     try {
-      const response = await axios.post("http://localhost:5000/signup", values)
+      const response = await axios.post("https://ruiz-app-server.onrender.com/signup", values)
       console.log(response.data)
       navigate('/Welcome')
     } catch (error) {

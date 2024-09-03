@@ -5,6 +5,7 @@ const pool = createPool({
     user: process.env.USER,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
+    ssl: { ca: process.env.SSL},
     connectionLimit: 30,
     waitForConnections: true
 })

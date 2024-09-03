@@ -28,7 +28,7 @@ const Login = () => {
     event.preventDefault();
     setError(null)
     try {
-      const response = await axios.post("http://localhost:5000/login", values);
+      const response = await axios.post("https://ruiz-app-server.onrender.com/login", values);
       console.log(response.data);
       navigate('/Welcome');
     } catch (error) {
