@@ -6,7 +6,7 @@ const bodyParser = require("body-parser"); // Keep for consistency
 require("dotenv").config();
 const pool = require("./connection"); //
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const cookieParser = require("cookie-parser");
 
 app.use(bodyParser.json());
