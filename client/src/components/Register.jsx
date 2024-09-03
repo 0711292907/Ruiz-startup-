@@ -4,6 +4,9 @@ import '../App.css'
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 import axios from "axios"
+import GoogleBtn from "./GoogleBtn"
+import logoImg from '../asserts/Logo.png';
+import sideImg from '../asserts/Image.png'
 
 const Register = () => {
   const [values, setValues] = useState({
@@ -22,21 +25,14 @@ const Register = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    axios.post("http://localhost:5001/register", values)
-    .then(res => {
-      if(res.data === "User has been created!"){
-        navigate('/login')
-      }else{
-        setError(res.data)
-      }
-    })
-    .then(err => console.log(err))
-   /**  try {
-      await axios.post("http://localhost:5001/register", values)
-      navigate('/login')
-    } catch (err) {
-      setError(err.response.data)
-    } */
+    try {
+      const response = await axios.post("http://localhost:5000/signup", values)
+      console.log(response.data)
+      navigate('/Welcome')
+    } catch (error) {
+      const errMessage = error.response?.data?.message || 'Connection error.';
+      setError(errMessage);
+    }
   }
 
   return (
@@ -44,15 +40,15 @@ const Register = () => {
         <div className='row'>
             <div className="col-lg-6 column">
       <div className='logo'>
-        <img src="/Logo.png" alt="logo" className="img-fluid"/>
+      <img src={logoImg} alt="logo" className="img-fluid" />
       </div>
       <div className='heading'>
         <h2>sign up</h2>
         <p>Create an account to get started.</p>
       </div>
-      <div className='google-container'>
-        <span><img className="pb-1" src="/google1.png" alt="google" /> continue with google</span>
-      </div>
+      <GoogleBtn
+      setError = {setError}
+      />
       <div className='separater'>
         <span className="top-bottom-space"><hr /><span className="mx-3">or</span><hr /></span>
       </div>
@@ -80,7 +76,7 @@ const Register = () => {
       </div>
       </div>
       <div className="col-lg-6 col-md-6 col-xs-6 column1 p-0">
-        <img src="/Image.png" alt="side_picture..." className="img-fluid"/>
+      <img src={sideImg} alt="side_picture..." className="img-fluid" />
       </div>
       <div className="footer-image p-0">
         <img src="/Image2.png" alt="side_picture..." className="img-fluid"/>

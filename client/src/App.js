@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Homepage from './components/Homepage';
+import Welcome from './components/Welcome';
 import Login from './components/Login';
 import Register from './components/Register';
-import Nopage from './components/Nopage';
+
 
 function App() {
   return (
@@ -11,8 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Register />} />
           <Route path="/Login" element={<Login />} />
-          <Route path="/Nopage" element={<Nopage />} />
-          <Route path="/Homepage" element={<Homepage />} />
+          <Route path="/Welcome" element={<Welcome />} />
         </Routes>
       </BrowserRouter>
     </div>
